@@ -1,0 +1,36 @@
+.BoardListTable {
+  width: 100%;
+  margin: 30px auto;
+  border-collapse: collapse;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.BoardListTable th,
+.BoardListTable td {
+  padding: 12px 20px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.BoardListTable th {
+  background-color: #20716e;
+  color: white;
+  font-size: 18px;
+}
+
+.BoardListTable tr:hover {
+  background-color: #f1f1f1;
+  transition: 0.3s;
+}
+
+.BoardListTable td {
+  font-size: 16px;
+  color: #333;
+}
+
+/* 선택된 행 강조 (선택 기능 추가 시 사용) */
+.BoardListTable tr.selected {
+  background-color: #32ab9e;
+  color: white;
+}

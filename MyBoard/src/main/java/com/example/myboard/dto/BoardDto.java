@@ -4,6 +4,7 @@ import com.example.myboard.entity.BoardImg;
 import lombok.*;
 
 import java.util.Date;
+import java.util.List;
 
 @Getter
 @Setter
@@ -17,5 +18,6 @@ public class BoardDto {
     private String title;
     private String content;
     private Date regDate;
-    private BoardImg boardImg;
+    private List<BoardImg> boardImgs;
+
 }

@@ -1,11 +1,15 @@
 package com.example.myboard.entity;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.util.Date;
 
 @Entity
 @Table(name = "BOARD")
+@Getter
+@Setter
 public class Board {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "board_seq_gen")
@@ -21,6 +25,6 @@ public class Board {
     @Column(name = "content")
     private String content;
 
-    @Column(name = "regDate")
-    private Date regDate;
+    @Column(name = "regdate")
+    private Date regDate = new Date();
 }

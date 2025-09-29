@@ -1,0 +1,84 @@
+.BoardInsertPage {
+  width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.BoardInsertPage h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #20716e;
+}
+
+.BoardInsertPage .title,
+.BoardInsertPage .name,
+.BoardInsertPage .content {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.BoardInsertPage label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.BoardInsertPage input,
+.BoardInsertPage textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s;
+
+}
+
+.BoardInsertPage input:focus,
+.BoardInsertPage textarea:focus {
+  border-color: #20716e;
+}
+
+.BoardInsertPage textarea {
+  min-height: 150px;
+  resize: vertical;
+resize: none;
+}
+
+.BoardInsertPage .btnGroup {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.BoardInsertPage button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.BoardInsertPage .submitBtn {
+  background-color: #20716e;
+  color: white;
+}
+
+.BoardInsertPage .submitBtn:hover {
+  background-color: #32ab9e;
+}
+
+.BoardInsertPage .cancelBtn {
+  background-color: #ccc;
+}
+
+.BoardInsertPage .cancelBtn:hover {
+  background-color: #aaa;
+}
