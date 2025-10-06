@@ -26,7 +26,7 @@ const BoardInsertPage = () => {
             alert("글 등록 성공")
             navigate("/board");
         }catch(error){
-            alert("글 등록 실패")
+            alert("글 등록 실패" + error)
         }
     }
 
@@ -47,14 +47,6 @@ const BoardInsertPage = () => {
                 <input type="text" 
                     value = {name}
                     onChange={(e) => setName(e.target.value)}
-                />
-            </div>
-
-            <div className="name">
-                <label>비밀번호 :</label>
-                <input type="password" 
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
                 />
             </div>
 

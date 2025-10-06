@@ -1,0 +1,82 @@
+.BoardDetailPage {
+  width: 700px;
+  margin: 30px auto;
+  padding: 25px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.BoardDetailPage h2 {
+  margin-bottom: 20px;
+  color: #20716e;
+}
+.BoardDetailPage h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2e6361;
+}
+.BoardDetailPage .board-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.BoardDetailPage .board-content {
+  line-height: 1.6;
+  font-size: 16px;
+  min-height: 200px;
+  white-space: pre-wrap;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.BoardDetailPage .btnGroup {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 25px;
+  gap: 10px;
+}
+
+.BoardDetailPage button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.BoardDetailPage .backBtn {
+  background-color: #20716e;
+  color: white;
+}
+
+.BoardDetailPage .backBtn:hover {
+  background-color: #32ab9e;
+}
+
+
+.BoardDetailPage .modifyBtn {
+  background-color: #0d709e;
+  color: white;
+}
+
+.BoardDetailPage .modifyBtn:hover {
+  background-color: #3347f7;
+}
+
+
+.BoardDetailPage .deleteBtn {
+  background-color: #a80808;
+  color: white;
+}
+
+.BoardDetailPage .deleteBtn:hover {
+  background-color: #e40c0c;
+}

@@ -1,0 +1,52 @@
+/* Searchbar.css */
+.Searchbar {
+  display: flex;
+  justify-content: flex-end; /* 오른쪽 끝 정렬 */
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.Searchbar select {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  transition: all 0.2s;
+}
+
+.Searchbar select:hover {
+  border-color: #888;
+}
+
+.Searchbar input {
+  width: 200px; /* 반으로 줄임 */
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.Searchbar input:focus {
+  border-color: #046304;
+  box-shadow: 0 0 5px rgba(5, 121, 49, 0.3);
+}
+
+.Searchbar button {
+  padding: 6px 16px;
+  border-radius: 6px;
+  border: none;
+  background-color: #046304;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.Searchbar button:hover {
+  background-color: #09ce1a;
+}

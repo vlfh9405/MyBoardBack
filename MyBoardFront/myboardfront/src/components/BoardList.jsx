@@ -1,8 +1,20 @@
 import React from "react";
-import "../css/BoardList.css"; 
+import { useNavigate } from "react-router-dom";
+import "../css/BoardList.css";
 
-const BoardList = ({ BoardList }) => {
+const BoardList = ({ boardList }) => {
+  const navigate = useNavigate();
+
+  const handleClickPage = (id) => {
+    navigate(`/board/${id}`);
+  };
+
+  if (!boardList || boardList.length === 0) {
+    return <p>게시글이 없습니다.</p>;
+  }
+
   return (
+    <div className="BoardList">
     <table className="BoardListTable">
       <thead>
         <tr>
@@ -13,17 +25,17 @@ const BoardList = ({ BoardList }) => {
         </tr>
       </thead>
       <tbody>
-        {BoardList.map((item) => (
-            console.log(item),
-          <tr key={item.id}>
+        {boardList.map((item) => (
+          <tr key={item.id} onClick={() => handleClickPage(item.id)}>
             <td>{item.id}</td>
             <td>{item.title}</td>
             <td>{item.name}</td>
-            <td>{item.regDate.slice(0,10)}</td>
+            <td>{item.regDate.slice(0, 10)}</td>
           </tr>
         ))}
       </tbody>
     </table>
+    </div>
   );
 };
 

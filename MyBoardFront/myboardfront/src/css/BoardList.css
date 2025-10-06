@@ -5,6 +5,9 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.BoardList{
+  height: 300px;
+}
 
 .BoardListTable th,
 .BoardListTable td {

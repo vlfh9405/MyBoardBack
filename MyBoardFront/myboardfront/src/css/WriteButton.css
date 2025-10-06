@@ -1,24 +1,24 @@
 .Write {
-  display: flex;          /* 버튼처럼 최소 영역만 차지 */
+  display: flex;          
   margin: 20px 0;          
 justify-content: flex-end;
 }
 
 .Write a {
-  font-size: 20px;                /* 글씨 크기 */
-  padding: 10px 25px;             /* 버튼 안쪽 여백 */
+  font-size: 20px;               
+  padding: 10px 25px;            
   text-decoration: none;          
-  color: white;                   /* 글자색 */
-  background-color: #20716e;      /* 버튼 배경색 */
+  color: white;                  
+  background-color: #20716e;      
   display: block;                 
   text-align: center;
-  border-radius: 8px;             /* 모서리 둥글게 */
-  transition: 0.3s;               /* 마우스 오버 시 부드러운 효과 */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* 그림자 */
+  border-radius: 8px;            
+  transition: 0.3s;              
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 .Write a:hover {
-  background-color: #32ab9e;      /* 호버 시 색상 변경 */
+  background-color: #32ab9e;      
   color: white;
-  transform: translateY(-2px);    /* 살짝 떠 있는 느낌 */
+  transform: translateY(-2px);   
 }

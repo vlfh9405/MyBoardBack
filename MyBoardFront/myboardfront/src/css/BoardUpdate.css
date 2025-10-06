@@ -1,0 +1,80 @@
+.BoardUpdatePage {
+  width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.BoardUpdatePage h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #20716e;
+}
+
+.BoardUpdatePage .formGroup {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.BoardUpdatePage label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.BoardUpdatePage input,
+.BoardUpdatePage textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.BoardUpdatePage input:focus,
+.BoardUpdatePage textarea:focus {
+  border-color: #20716e;
+}
+
+.BoardUpdatePage textarea {
+  min-height: 150px;
+  resize: none;
+}
+
+.BoardUpdatePage .btnGroup {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.BoardUpdatePage button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.BoardUpdatePage .submitBtn {
+  background-color: #20716e;
+  color: white;
+}
+
+.BoardUpdatePage .submitBtn:hover {
+  background-color: #32ab9e;
+}
+
+.BoardUpdatePage .cancelBtn {
+  background-color: #ccc;
+}
+
+.BoardUpdatePage .cancelBtn:hover {
+  background-color: #aaa;
+}

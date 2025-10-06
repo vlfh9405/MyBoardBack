@@ -1,6 +1,7 @@
 package com.example.myboard.controller;
 
 import com.example.myboard.dto.BoardDto;
+import com.example.myboard.dto.BoardPageResponse;
 import com.example.myboard.entity.Board;
 import com.example.myboard.service.BoardService;
 import lombok.RequiredArgsConstructor;
@@ -21,10 +22,13 @@ public class BoardController {
     private final BoardService boardService;
 
     @GetMapping("/list")
-    public List<BoardDto> boardList() {
-        List<BoardDto> boards = boardService.getAllBoards();
-        boards.sort((b1, b2) -> b2.getId().compareTo(b1.getId()));
-        return boards;
+    public BoardPageResponse getBoards(
+            @RequestParam(defaultValue = "1") int page,
+            @RequestParam(defaultValue = "10") int size,
+            @RequestParam(required = false) String type,
+            @RequestParam(required = false) String keyword)
+            {
+        return boardService.getBoardsByPage(page, size, type, keyword);
     }
 
     @GetMapping("/detail")
@@ -40,16 +44,13 @@ public class BoardController {
 
     @PutMapping("/update")
     public ResponseEntity<?> updateBoard(@RequestBody BoardDto boardDto) {
-        return null;
+        boardService.updateBoard(boardDto);
+        return ResponseEntity.ok("글 수정 성공");
     }
 
     @DeleteMapping("/delete")
-    public ResponseEntity<?> deleteBoard(@RequestBody BoardDto boardDto) {
-        return null;
-    }
-
-    @DeleteMapping("/multi/delete")
-    public ResponseEntity<?> deleteBoards(@RequestBody BoardDto boardDto) {
-        return null;
+    public ResponseEntity<?> deleteBoard(@RequestParam("id") Long id) {
+        boardService.deleteBoard(id);
+        return ResponseEntity.ok("글 삭제 성공");
     }
 }

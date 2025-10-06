@@ -41,17 +41,17 @@ public class TestCode {
         assertThat(saved.getTest()).isGreaterThan(0); // ID가 생성되었는지 확인
     }
 
-    @org.junit.jupiter.api.Test
+/*    @org.junit.jupiter.api.Test
     public void controllerTest(){
         List<BoardDto> list = boardController.boardList();
         list.forEach(System.out::println);
-    }
+    }*/
 
-    @org.junit.jupiter.api.Test
+ /*   @org.junit.jupiter.api.Test
     public void serviceTest(){
         List<BoardDto> list = boardService.getAllBoards();
         list.forEach(System.out::println);
-    }
+    }*/
 
     @org.junit.jupiter.api.Test
     public void insertBoardTest() {

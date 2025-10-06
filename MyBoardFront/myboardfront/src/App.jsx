@@ -4,6 +4,8 @@ import Navi from './layout/Navi'
 import BoardListPage from "./page/BoardListPage";
 import NoticePage from "./page/NoticePate";
 import BoardInsertPage from "./page/BoardInsertPage";
+import BoardDetail from "./page/BoardDetailPage";
+import BoardUpdatePage from "./page/BoardUpdatePage";
 function App() {
   return (
     <Router>
@@ -12,6 +14,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Navigate to="/board" replace />} />
         <Route path="/board" element ={<BoardListPage/>}/>
+        <Route path="/board/:id" element = {<BoardDetail/>}/>
+        <Route path="/board/update" element = {<BoardUpdatePage/>} />
         <Route path="/notice" element ={<NoticePage/>}/>
         <Route path="/write" element = {<BoardInsertPage/>}/>
       </Routes>
